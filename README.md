@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-![Image](https://onewaylight.github.com/Gui1.PNG)
+![Image](https://onewaylight.github.com/images/Gui1.PNG)
 
 ### Markdown
 
