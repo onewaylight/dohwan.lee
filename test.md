@@ -15,5 +15,5 @@ You **can** be combine him.
 
 * List 1
 * List 2
-  * Indented List 1
-  * Indented List 2
+  1. Indented List 1
+  1. Indented List 2
