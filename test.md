@@ -5,4 +5,10 @@ I'd like to use wiki style editor.
 
 # This is first
 ## This is second 
-####### This is thrid.
+###### This is thrid.
+
+*Hi Emphasize*
+_Thisis also_
+**Bold text**
+
+You **can** be combine him.
