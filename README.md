@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ![Image](https://user-images.githubusercontent.com/34089273/40541530-0f016f66-6057-11e8-8e41-1480afe9d763.png)
 
-
+![Image](logo.png)
 
 ### Markdown
 
