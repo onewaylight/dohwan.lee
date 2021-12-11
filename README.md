@@ -18,8 +18,6 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
   - MS Visual Studio 
   - Visual Studio C/C++, MFC 
   - C/C++ Std 17, 20
-  - C# 
-
   - Java Not too much
   - C# .Net and .NetFramework.
     - Prism Framework
