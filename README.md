@@ -11,14 +11,14 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
 ![Image](images/z80trkit-sm.jpg) https://www.kswichit.com/Z80/Z80.html
 
 - Windows Application 
-- GW Basic(Built in MS-DOS)
-- Quick Basic(I think it was first compiled basic compiler language? I couldn't remember exactly. It was long time ago!!!)
-- Turbo C/C++ (Borland)
-- Borland C/C++
-- MS Visual Studio 
-- Visual Studio C/C++, MFC 
-- C/C++ Std 17, 20
-- C# 
+  - GW Basic(Built in MS-DOS)
+  - Quick Basic(I think it was first compiled basic compiler language? I couldn't remember exactly. It was long time ago!!!)
+  - Turbo C/C++ (Borland)
+  - Borland C/C++
+  - MS Visual Studio 
+  - Visual Studio C/C++, MFC 
+  - C/C++ Std 17, 20
+  - C# 
 
 - Java Not too much
 - Kotlin 
