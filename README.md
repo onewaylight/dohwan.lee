@@ -8,7 +8,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
 - Embedded System
 
 - My first embedded traing kit. looks like this one, it was long long time ago almost 30 years
-![Image](images/z80trkit-sm.jpg)
+![Image](images/z80trkit-sm.jpg) https://www.kswichit.com/Z80/Z80.html
 
 - Windows Application 
 - GW Basic(Built in MS-DOS)
