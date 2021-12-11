@@ -20,9 +20,16 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
   - C/C++ Std 17, 20
   - C# 
 
-- Java Not too much
-- Kotlin 
-- C# .Net and .NetFramework.
-
+  - Java Not too much
+  - C# .Net and .NetFramework.
+    - Prism Framework
+    - MVVM
+    - Metro Library
+    - DevExpress
+    - CSLA Enterprise Business Framework
+    - DI & IoC Mechanism
+    - AOP
 
 - 3D Printer
+- Android Native Application
+- Kotlin 
