@@ -30,6 +30,8 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - CSLA Enterprise Business Framework
     - DI & IoC Mechanism
     - AOP
+    - Recommended C# Books and References.
+      - Depth in C#
 
 - 3D Printer
 - Android Native Application
