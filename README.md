@@ -31,7 +31,12 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - DI & IoC Mechanism
     - AOP
     - Recommended C# Books and References.
-      - Depth in C#
+      - C# in Depth
+      - CLR via C# 
+      - Effective C# 50 Specific Ways to Improve Your C#
+      - Concurrency in C#
+      - Building Machine Learning Powered Applications-Going from Idea to Poduct
+      - Building Enterprise Applications with Windows Presentation Foundation and the Model View ViewModel Pattern
 
 - 3D Printer
 - Android Native Application
