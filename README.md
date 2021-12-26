@@ -23,7 +23,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
   - C/C++ Std 17, 20
   - Java Not too much
   - C# .Net and .NetFramework.
-    - (Prism Framework)[https://prismlibrary.com/]
+    - [Prism Framework](https://prismlibrary.com/)
     - MVVM
     - Metro Library
     - DevExpress
