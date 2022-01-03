@@ -37,6 +37,10 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
       - Concurrency in C#
       - Building Machine Learning Powered Applications-Going from Idea to Poduct
       - Building Enterprise Applications with Windows Presentation Foundation and the Model View ViewModel Pattern
+    - Expression - Use for Dynamic
+    - RealProxy - it support like AOP(Aspect Oriented Programming)
+    - Dynamic Programming
+    - [ExtensionMethod](https://michaelscodingspot.com/extension-methods/)
 
 - 3D Printer
 - Android Native Application
