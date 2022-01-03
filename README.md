@@ -41,6 +41,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - RealProxy - it support like AOP(Aspect Oriented Programming)
     - Dynamic Programming
     - [ExtensionMethod](https://michaelscodingspot.com/extension-methods/)
+    - [ExtensionMethod MSNN](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
 
 - 3D Printer
 - Android Native Application
