@@ -42,6 +42,9 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - Dynamic Programming
     - [ExtensionMethod](https://michaelscodingspot.com/extension-methods/)
     - [ExtensionMethod MSNN](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+    
+    | C/C++언어를 30여년간 사용해 오면서 깊이 다루지 못한 부분도 많지만 C#을 사용하면서도 마찬가지로 디테일하게 터치하지 못한 부분이 많다는 사실을 보게 된다.
+    
 
 - 3D Printer
 - Android Native Application
