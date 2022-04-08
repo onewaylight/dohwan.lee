@@ -43,8 +43,8 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - [ExtensionMethod](https://michaelscodingspot.com/extension-methods/)
     - [ExtensionMethod MSDN](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
     - [Dynamically Build LINQ Expressions](https://blog.jeremylikness.com/blog/dynamically-build-linq-expressions/)
-    
-    #####
+    - Functional Programming
+    ######
     C/C++언어를 30여년간 사용해 오면서 깊이 다루지 못한 부분도 많지만 C#을 사용하면서도 마찬가지로 디테일하게 터치하지 못한 부분이 많다는 사실을 보게 된다.
     어떻게 하면 좀더 다양하고 깊이있게 언어적 특성을 잘활용하면서 개발을 할것인가 생각을 하게되는데... 기본적 언어적 특성을 익히는데 급급할 것이 아니라 
     언어의 기본적 특성뿐 아니라 그 언어의 활용적측면에서 깊이있게 이해하면서 활용할 수 있는 부분을 생각하게 된다.
