@@ -29,7 +29,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     - DevExpress
     - CSLA Enterprise Business Framework
     - DI & IoC Mechanism
-    - AOP
+    - AOP: Real Proxy, Dispatch Proxy
     - Recommended C# Books and References.
       - C# in Depth
       - CLR via C# 
@@ -38,7 +38,6 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
       - Building Machine Learning Powered Applications-Going from Idea to Poduct
       - Building Enterprise Applications with Windows Presentation Foundation and the Model View ViewModel Pattern
     - Expression - Use for Dynamic
-    - RealProxy - it support like AOP(Aspect Oriented Programming)
     - Dynamic Programming
     - [ExtensionMethod](https://michaelscodingspot.com/extension-methods/)
     - [ExtensionMethod MSDN](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
@@ -52,7 +51,14 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     우물안 개구리로 살다보면 이러한 깊이와 넓이가 있는지 모르고 내가 아는 것이 다인듯 착각하고 살게되는것 같다.
     하지만 다행이도 그런 기회들이 주어져서 언어의 다양한 깊이와 넓이에 대한 자료들에 대해 깊이 공부하게 된다.
     #####
-    
+
+    - Understanding About delegates in C#
+      - It is called pointer to a function. Delegates are used to pass methods as arguments to other methods.
+      - It is a type that represents references to methods with a particular parameter list and return type. 
+      - Delegates allow to pass method as parameters.
+      - It can be used to define callback methods.  
+      - It can be chained together; for example, multiple methods can be called on a single event.
+      - Methods don't have to match the delegate type exactly.
 
 - 3D Printer
 - Android Native Application
