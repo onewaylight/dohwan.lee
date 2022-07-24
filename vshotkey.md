@@ -1,4 +1,4 @@
-- ctrl [k][c] comment selection
+- ctrl ```[k]``` ```[c]``` comment selection
 - ctrl [k][u] uncomment selection
 - ctrl [k][d] format document
 - ctrl [k][f] format selection
