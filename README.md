@@ -8,6 +8,9 @@
     
     https://www.kswichit.com/Z80/Z80.html
 
+  - ATMEL atmega serise
+  - STM32F103 ...
+  - MPC870
 ### Windows Application 
   - GW Basic(Built in MS-DOS)
   - Quick Basic(I think it was first compiled basic compiler language? I couldn't remember exactly. It was long time ago!!!)
