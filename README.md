@@ -1,11 +1,6 @@
-## Hi This is Dohwan
+# IT Skills
 
-You can use the [editor on GitHub](https://github.com/onewaylight/engineering/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-![Image](images/logo.png)
-
-
-- Embedded System
+### Embedded System
 
   - My first embedded traing kit. Not exactly this one. Looks like this one, it was long long time ago almost 30 years in a highschool.
   
@@ -13,7 +8,7 @@ You can use the [editor on GitHub](https://github.com/onewaylight/engineering/ed
     
     https://www.kswichit.com/Z80/Z80.html
 
-- Windows Application 
+### Windows Application 
   - GW Basic(Built in MS-DOS)
   - Quick Basic(I think it was first compiled basic compiler language? I couldn't remember exactly. It was long time ago!!!)
   - Turbo C/C++ (Borland)
