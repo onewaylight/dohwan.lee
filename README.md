@@ -58,6 +58,11 @@
       - It can be chained together; for example, multiple methods can be called on a single event.
       - Methods don't have to match the delegate type exactly.
 
-- 3D Printer
-- Android Native Application
-- Kotlin 
+### 3D Printer
+
+  - 3D Scanner
+
+  - Agisoft metashape
+  - 
+
+### 아름다운 우리나라...
