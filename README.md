@@ -3,10 +3,16 @@
 요즈음은 관심있어 하는 분야.
 실제 현장에서 관심 있어하는 기술들과 기술의 적용범위들에 대해서 고민하고 제품개발에 대해 집중하고 있다.
 
+### 임베디드 
 다양한 MCU들을 핸들링하고 있고
 Arduino Sketch등의 오픈소스 하드웨어가 나오며 하드웨어 개발에 대한 접근이 쉬워졌다.
 하지만 기능이 많아지고 성능을 요구하고 재활용과 같은 소프트웨어 엔지니어링 관점의 요구사항이 많아진다면 Arduino Sketch는 좋은 솔루션은 아닌듯 하다.
 다양한 MCU 모델을 한 번에 개발하고 있다면 문제에 직면할 수 있다.
+현재는 esp-idf framework 을 기반으로 개발하는 것을 검토하고 있다.
+freeRTOS를 지원하면서 아두이노 스케치의 한계를 넘을 수 있지 않을까 하는 생각이 든다.
+
+ESP32 시리즈는 가격이 저렴하다.
+지원하는 기능도 다양하고 실제 IoT영역에서 많은 영역을 차지하고 있지 않나 생각된다.
 
 ### Embedded System
 
@@ -16,7 +22,7 @@ Arduino Sketch등의 오픈소스 하드웨어가 나오며 하드웨어 개발�
     
     [http://retro.hansotten.nl/z80/z80-microprocessor-kit/](http://retro.hansotten.nl/z80/z80-microprocessor-kit/)
 
-  - ATMEL atmega serise
+  - ATMEL Atmega Serises
   - STM32F103 ...
   - MPC860 - It was most powerful communication processor.
 ### Windows Application 
