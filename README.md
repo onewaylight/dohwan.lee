@@ -13,6 +13,7 @@ freeRTOS를 지원하면서 아두이노 스케치의 한계를 넘을 수 있�
 
 ESP32 시리즈는 가격이 저렴하다.
 지원하는 기능도 다양하고 실제 IoT영역에서 많은 영역을 차지하고 있지 않나 생각된다.
+간단한 breakout 보드를 만들기에도 용이하다.
 
 ![Image](images/esp32_pcb_ovrangelimit.jpg)
 
