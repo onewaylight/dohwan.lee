@@ -1,271 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Gorge Portfolio Template</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Gorge Portfolio Template">
-	<meta name="keywords" content="personal, portfolio">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css"/>
-    <link rel="stylesheet" href="css/colors/red.css" id="color"/>
-	<link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/dark.css"/>
+        body {
+            background-color: #f0f2f5;
+            line-height: 1.6;
+        }
 
-    <!-- Google Web fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    <!-- Font icons -->
-    <link rel="stylesheet" href="icon-fonts/fontawesome-5.0.6/css/fontawesome-all.min.css"/>
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+        }
 
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .skills-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: #1a73e8;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            margin: 0.25rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* Detail Page Styles */
+        .detail-header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- PRELOADER -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-inner"></div>
-        </div>
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- HEADER -->
-    <header>
-        <img src="images/logo.png" alt="">
-        <div class="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header id="home">
+        <img src="/api/placeholder/1200/400" alt="Background">
+        <div class="header-content">
+            <h1>John Doe</h1>
+            <p>Embedded Systems & Software Developer</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
         </div>
     </header>
 
-    <!-- FULL MENU -->
-    <div class="full-menu">
-        <div class="full-inner row">
-            <nav class="col-md-8">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="col-md-4 full-contact">
-                <ul>
-                    <li class="title">Get in Touch</li>
-                    <li>hi@gorge.com</li>
-                    <li>
-                        <div class="social">
-                            <a href="#"><i class="fab fa-facebook"></i>  </a>
-                            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a>
-                            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-                            <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
-                            <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a>
+    <div class="container">
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="embedded-systems.html" class="card-link">
+                        <img src="/api/placeholder/400/200" alt="Embedded Systems">
+                        <div class="card-content">
+                            <h3>Embedded Systems</h3>
+                            <ul class="skills-list">
+                                <li>Microcontroller Programming (ARM, AVR)</li>
+                                <li>RTOS Development</li>
+                                <li>Hardware Interfacing</li>
+                                <li>Firmware Development</li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                    </a>
+                </div>
 
-    <!-- SITE CONTENT -->
-    <div class="wrapper">
-        <section class="home">
-            <div id="particles-js"></div>
-            <div class="home-content">
-                <h1 class="hero-title">Idea To Be<br><span>Real</span></h1>
-                <p class="top_45">I am a IT <br> Expert<br><span class="element" data-text1="System Designer" data-text2="branding identity." data-text3="logo." data-loop="true" data-backdelay="1500"></span></p>
-                <div class="social">
-                    <a class="text">social links</a>
-                    <div class="line"></div>
-                    <a href="#"><i class="fab fa-facebook"></i>  </a>
-                    <!-- <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a> -->
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-                    <!-- <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a> -->
-                    <!-- <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a> -->
+                <div class="card">
+                    <a href="linux-development.html" class="card-link">
+                        <img src="/api/placeholder/400/200" alt="Linux Development">
+                        <div class="card-content">
+                            <h3>Linux Development</h3>
+                            <ul class="skills-list">
+                                <li>Kernel Module Development</li>
+                                <li>Device Drivers</li>
+                                <li>System Programming</li>
+                                <li>Shell Scripting</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="windows-applications.html" class="card-link">
+                        <img src="/api/placeholder/400/200" alt="Windows Applications">
+                        <div class="card-content">
+                            <h3>Windows Applications</h3>
+                            <ul class="skills-list">
+                                <li>C# .NET Development</li>
+                                <li>WPF Applications</li>
+                                <li>Windows Services</li>
+                                <li>Database Integration</li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <div class="cont">
-            <section id="portfolio" class="portfolio">
-                    <div class="portfolio-filter row">
-                        <div data-filter=".digital" class="cbp-filter-item">Digital Works</div>
-                        <div data-filter=".photography" class="cbp-filter-item">Photography</div>
-                        <div data-filter=".branding" class="cbp-filter-item">Branding</div>
-                        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">All Works</div>
-                    </div>
-                    <div id="grid-container">
-                        <!-- Item -->
-                        <div class="cbp-item photography">
-                            <a href="portfolio/work-1.html">
-                                <figure class="fig">
-                                    <img src="images/work-1.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Cosplay</h3>
-                                        <p>Photography</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
+        <!-- Project Gallery -->
+        <section id="projects">
+            <h2>Project Gallery</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <a href="project1.html" class="card-link">
+                        <img src="/api/placeholder/300/200" alt="Project 1">
+                        <div class="card-content">
+                            <h3>Smart Home Controller</h3>
+                            <p>IoT-based home automation system</p>
+                            <div>
+                                <span class="tag">C++</span>
+                                <span class="tag">IoT</span>
+                            </div>
                         </div>
-                        <!-- Item -->
-                        <div class="cbp-item digital">
-                            <a href="portfolio/work-2.html">
-                                <figure class="fig">
-                                    <img src="images/work-2.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Metra Park</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item digital">
-                            <a href="portfolio/work-3.html">
-                                <figure class="fig">
-                                    <img src="images/work-3.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Socialmedia</h3>
-                                        <p>Digital </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item branding">
-                            <a href="portfolio/work-5.html">
-                                <figure class="fig">
-                                    <img src="images/work-4.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Vrai Vodka</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item digital">
-                            <a href="portfolio/work-4.html">
-                                <figure class="fig">
-                                    <img src="images/work-5.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Smart Wallet</h3>
-                                        <p>Digital </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item branding">
-                            <a href="portfolio/work-6.html">
-                                <figure class="fig">
-                                    <img src="images/work-6.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Motorcycles</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item branding">
-                            <a href="portfolio/work-8.html">
-                                <figure class="fig">
-                                    <img src="images/work-7.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Racquel Natasha</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item branding">
-                            <a href="portfolio/work-7.html">
-                                <figure class="fig">
-                                    <img src="images/work-8.jpg" alt="">
-                                    <figcaption>
-                                        <h3>Swacket</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Item -->
-                        <div class="cbp-item branding">
-                            <a href="portfolio/work-9.html">
-                                <figure class="fig">
-                                    <img src="images/work-9.jpg" alt="">
-                                    <figcaption>
-                                        <h3>The Gang</h3>
-                                        <p>Branding </p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- load more button -->
-                    <div id="port-loadMore" class="cbp-l-loadMore-button top_120 bottom_90">
-                        <a href="port.html" class="cbp-l-loadMore-link site-btn" rel="nofollow">
-                            <span class="cbp-l-loadMore-defaultText">Load More (<span class="cbp-l-loadMore-loadItems">2</span>)</span>
-                            <span class="cbp-l-loadMore-loadingText">Loading...</span>
-                            <span class="cbp-l-loadMore-noMoreLoading">No More Works</span>
-                        </a>
-                    </div>
-            </section>
-
-            <hr class="top_90 bottom_90 col-md-8">
-
-            <section class="widget-twitter top_60">
-                 <div class="widget-title">
-                    <h2 class="classic-title">Latest Tweets</h2>
+                    </a>
                 </div>
-                <div class="tweet"><ul><li class="item">12312</li></ul></div>
-                <a href="https://twitter.com/envato" target="_blank" class="twitter-account">@envato</a>
-            </section>
-        </div> <!-- cont end -->
-    </div> <!-- wrapper end -->
 
-    <footer>
-       <div class="cont">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12 copyright">
-                    <img src="images/logo.png" alt="">
-                    <p>© 2018 Gorge Creative Agency</p>
+                <div class="card">
+                    <a href="project2.html" class="card-link">
+                        <img src="/api/placeholder/300/200" alt="Project 2">
+                        <div class="card-content">
+                            <h3>Industrial Monitor</h3>
+                            <p>Real-time monitoring system</p>
+                            <div>
+                                <span class="tag">C#</span>
+                                <span class="tag">WPF</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 d-sm-none d-md-block">
-                    <div class="social">
-                        <a href="#"><i class="fab fa-facebook"></i>  </a>
-                        <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a>
-                        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
-                        <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
-                        <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a>
-                    </div>
+
+                <div class="card">
+                    <a href="project3.html" class="card-link">
+                        <img src="/api/placeholder/300/200" alt="Project 3">
+                        <div class="card-content">
+                            <h3>Linux Driver</h3>
+                            <p>Custom device driver</p>
+                            <div>
+                                <span class="tag">C</span>
+                                <span class="tag">Linux</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 d-none d-sm-block getintouch">
-                    <a href="#">
-                        <strong>Get In Touch</strong><br>
-                        <p>hi@gergedigital.co</p>
+
+                <div class="card">
+                    <a href="project4.html" class="card-link">
+                        <img src="/api/placeholder/300/200" alt="Project 4">
+                        <div class="card-content">
+                            <h3>PCB Design</h3>
+                            <p>Custom hardware solution</p>
+                            <div>
+                                <span class="tag">Hardware</span>
+                                <span class="tag">PCB</span>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
-       </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="detail-content">
+                <p>Email: john.doe@example.com</p>
+                <p>LinkedIn: linkedin.com/in/johndoe</p>
+                <p>GitHub: github.com/johndoe</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
     </footer>
-
-    <!-- Javascripts -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/jquery.hover3d.js"></script>
-    <script src="twitter-api/tweetie.js"></script>
-    <script src="js/main.js"></script>
-    <!-- for color alternatives -->
-    <script src="js/jquery.cookie-1.4.1.min.js"></script>
-    <script src="js/Demo.js"></script>
-    <link rel="stylesheet" href="css/Demo.min.css" />
-
 </body>
 </html>
