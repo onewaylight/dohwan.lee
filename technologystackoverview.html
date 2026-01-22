@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Technology Stack | IoT Engineering Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glow-border:hover {
+            box-shadow: 0 0 15px rgba(19, 91, 236, 0.3);
+            border-color: rgba(19, 91, 236, 0.5);
+        }
+        .circuit-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(19, 91, 236, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-40 py-4">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="bg-primary p-1.5 rounded-lg text-white">
+                <span class="material-symbols-outlined block">memory</span>
+            </div>
+            <a class="text-xl font-bold tracking-tight" href="index.html">MRN Tech</a>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="technicalservice_detailpage.html">Services</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="portfoliogallery.html">Portfolio</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-primary" href="technologystackoverview.html">TechStack</a>
+            <!-- <button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all">
+                                    Start a Project
+                                </button> -->
+        </nav>
+        <div class="md:hidden">
+            <span class="material-symbols-outlined cursor-pointer">menu</span>
+        </div>
+    </div>
+</header>
+<main class="flex-1 circuit-bg">
+<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <!-- Hero Section for Tech Stack -->
+    <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 text-slate-900 dark:text-white">
+            Full-Spectrum <span class="text-primary">IoT Mastery</span>
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            From silicon to the cloud. I build robust, scalable, and secure embedded systems tailored for modern industrial and consumer applications.
+        </p>
+    </div>
+    <!-- Main Tech Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- 1. Embedded & Firmware -->
+        <div class="flex flex-col gap-6 p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#1c1f27]/50 backdrop-blur-sm glow-border transition-all">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                    <span class="material-symbols-outlined text-3xl">memory</span>
+                </div>
+                <h2 class="text-2xl font-bold">Embedded &amp; Firmware</h2>
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Hard real-time systems and low-level optimization for mission-critical hardware. Specializing in power-efficient firmware.
+                        </p>
+            <div class="space-y-4">
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-semibold">C / C++ (Bare Metal)</span>
+                        <span class="text-xs text-primary font-mono">Expert</span>
+                    </div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">RTOS (FreeRTOS, Zephyr)</span>
+<span class="text-xs text-primary font-mono">Advanced</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">STM32</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">ESP32</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">nRF52</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">I2C/SPI/UART</span>
+</div>
+</div>
+<!-- 2. Hardware Design -->
+<div class="flex flex-col gap-6 p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#1c1f27]/50 backdrop-blur-sm glow-border transition-all">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">schema</span>
+</div>
+<h2 class="text-2xl font-bold">Hardware Engineering</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Schematic capture and multi-layer PCB layout with a focus on DFM (Design for Manufacturing) and EMC compliance.
+                        </p>
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">PCB Layout &amp; Routing</span>
+<span class="text-xs text-primary font-mono">High Prof.</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">Analog &amp; RF Design</span>
+<span class="text-xs text-primary font-mono">Intermediate</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 75%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Altium Designer</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">KiCad</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Prototyping</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">DFM</span>
+</div>
+</div>
+<!-- 3. Cloud & Backend -->
+<div class="flex flex-col gap-6 p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#1c1f27]/50 backdrop-blur-sm glow-border transition-all">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">cloud_sync</span>
+</div>
+<h2 class="text-2xl font-bold">Cloud &amp; Connectivity</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Secure telemetry and device management. Connecting hardware to enterprise-grade cloud infrastructures via lightweight protocols.
+                        </p>
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">AWS IoT Core / Azure IoT</span>
+<span class="text-xs text-primary font-mono">Expert</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">Node.js &amp; Python Backend</span>
+<span class="text-xs text-primary font-mono">Advanced</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">MQTT</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">HTTP/TLS</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Docker</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">InfluxDB</span>
+</div>
+</div>
+<!-- 4. Frontend & Mobile -->
+<div class="flex flex-col gap-6 p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#1c1f27]/50 backdrop-blur-sm glow-border transition-all">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">devices</span>
+</div>
+<h2 class="text-2xl font-bold">Interface &amp; Dashboards</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Data visualization and control interfaces. Turning complex sensor data into actionable insights through modern web and mobile apps.
+                        </p>
+<div class="space-y-4">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">React &amp; Tailwind CSS</span>
+<span class="text-xs text-primary font-mono">Expert</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 94%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold">Flutter (Mobile)</span>
+<span class="text-xs text-primary font-mono">Advanced</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 80%"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Next.js</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Three.js</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">Bluetooth LE</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-mono border border-slate-200 dark:border-slate-700">React Native</span>
+</div>
+</div>
+</div>
+<!-- Tools & Tooling Banner -->
+<div class="mt-16 bg-white dark:bg-[#1c1f27] rounded-xl border border-slate-200 dark:border-slate-800 p-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h3 class="text-xl font-bold mb-2">Proficiency &amp; Tooling</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Industrial grade tools used in my daily development workflow.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">GDB/J-Link</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">Pick &amp; Place</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl">monitoring</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">Oscilloscope</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl">hub</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">GitOps</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="mt-24 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+                        Available for Q3 2024 Projects
+                    </div>
+<h2 class="text-3xl font-bold mb-8">Ready to bring your IoT idea to life?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-primary/20">
+                            Book a Strategy Call
+                        </button>
+<button class="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 font-bold py-4 px-10 rounded-xl transition-all">
+                            Download Resume (PDF)
+                        </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-slate-200 dark:border-slate-800 py-12 px-10 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+            <div class="size-6 text-slate-400">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <span class="text-sm font-bold opacity-60 uppercase tracking-widest">MRNTech © 2025</span>
+        </div>
+        <div class="flex gap-8">
+            <a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+            <a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+            <a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+        </div>
+    </div>
+</footer>
+</div>
+</body></html>
