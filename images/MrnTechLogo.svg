@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(188.066,0,0,212.90459,10.465697,67.799674)"
+       spreadMethod="pad"
+       id="linearGradient4">
+      <stop
+         style="stop-color:#fffffe;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.00561523"
+         id="stop3" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(148.91085,0,0,168.57808,51.029191,160.31449)"
+       spreadMethod="pad"
+       id="linearGradient7">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#fffbff;stop-opacity:1;"
+         offset="0"
+         id="stop6" />
+      <stop
+         style="stop-color:#fffffd;stop-opacity:1;"
+         offset="1"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(188.76295,0,0,213.6936,10.438134,215.17287)"
+       spreadMethod="pad"
+       id="linearGradient10">
+      <stop
+         style="stop-opacity:1;stop-color:#0071bc"
+         offset="0"
+         id="stop8" />
+      <stop
+         style="stop-color:#fffffc;stop-opacity:1;"
+         offset="0.00561523"
+         id="stop9" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="path4"
+       d="M 10.466746,95.828928 C 111.97941,145.09768 198.53176,117.34797 198.53176,117.34797 v 0 C 124.00975,125.47447 10.466746,10.463353 10.466746,10.463353 v 0 z"
+       style="fill:url(#linearGradient4);stroke:none;stroke-width:1.43003" />
+    <path
+       id="path7"
+       d="M 51.029342,192.33974 C 92.46421,185.04399 156.65068,167.98 199.9403,129.06073 v 0 c 0,0 -51.97738,24.91052 -148.910958,-0.77142 v 0 z"
+       style="fill:url(#linearGradient7);stroke:none;stroke-width:1.43003" />
+    <path
+       id="path10"
+       d="m 10.438517,215.34379 v 71.46182 C 116.65527,278.90276 199.20108,143.54115 199.20108,143.54115 v 0 c -55.1412,60.80196 -188.762563,71.80264 -188.762563,71.80264"
+       style="fill:url(#linearGradient10);stroke:none;stroke-width:1.43003" />
+  </g>
+</svg>
